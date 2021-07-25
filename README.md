@@ -1,9 +1,10 @@
-# Name of Project
+# Weather Dashboard
 
-Brief description about the project.
+Weather Outlook for multiple cities.
 
 ## Description
-Descibe the project/motivation behind the project
+
+This app allows users to search for a city and are presented with the city's current and future weather conditions.  Along with the current weather conditions, a five-day forecast is presented.  Users can search for multiple cities, and each city search is shown on the left side so users can revisit previous cities they search for without reentering the city again.
 
 ### Built With
 HTML
@@ -15,11 +16,17 @@ JavaScript
 ### Website
 
 ## Author
+
 👤 **Shannon Posey**
+
 * GitHub: [@ShannonPosey](https://github.com/ShannonPosey)
+
 * LinkedIn: [@https:\/\/www.linkedin.com\/in\/shannonposey](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/shannonposey)
 ## 🤝 Contributing
+
 Made by Shannon Posey
 ## 📝 License
+
 Copyright © 2021 [Shannon Posey](https://github.com/ShannonPosey).<br />
+
 ***
