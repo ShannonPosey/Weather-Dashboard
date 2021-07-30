@@ -4,31 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Weather Dashboard</title>
-</head>
-<body class="flex-column min-100-vh">
-    <header class="hero">
-        <h1 class="app-title">Weather DashBoard</h1>
-    </header>
+    <!--Font Awesome Stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <main class="flex-row justify-space-between">
-        <div class="col-12 col-md-4">
-            <div class="card">
-                <h2 class="card-header">Search for a City:</h2>
-                <form action="" id="user-form" class="card-body">
-                    <input name="city" id="city" type="text" autofocus="true" class="form-input" placeholder="Name of City">
-                    <button type="submit" class="btn">Search</button>
-                </form>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- CSS Stylesheet-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Weather Dashboard</title>
+    </head>
+<body>
+    <header>
+     <div class="bg-primary">
+        <div class="container">
+            <h1 class="text-center text-white">Weather Dashboard</h1>
+        </div>
+     </div>
+    </header>
+
+    <main>
+        <!-- Main Container-->
+     <div class="container-fluid">
+        <!--Row Start-->
+        <div class="row">
+            <!-- Columns start-->
+            <div class="col-3 bg-light pt-3 pb-3">
+                <h2>Search for a City:</h2>
+                <div class="input-group mb-3">
+                <input name="city" id="searchTerm" type="text" autofocus="true" class="input-group-append" placeholder="Name of City">
+                <button type="button" id="searchBtn" class="btn btn-primary btn-lg active">Search</button>
+                </div>
             </div>
-            <div class="card">
-                Orlando
-            </div>
+       
+    
+        <!--Search cities displaying-->
+        <div class="card">
+            <ul class="list-group list-group-flush list">
+            </ul>
         </div>
 
-        <div class></div>
-    </main>
+        <!--Current City temp displayed-->
+        <div class="col-lg-9">
+            <div id="currentCity" class=" mt-4">
+                CUrrent City
+            </div>
+        </div>
+        </div>
 
-    <script src="./assets/js/script.js"></script>
+        <!--Forecast Containers-->
+        <div class="col-md-12 mt-4">
+            <h3 id="five-day-forecast" class="text-center mt-3">5-Day Forecast</h3>
+            <div id="forecast" class="row justify-center ml-2 mb-3 mt-2 p-2">
+                test
+                test
+            </div>
+        </div>
+     </div>
+    </main>
+    
+    <!-- Will need to UV index
+        <span class="badge badge-success">Success</span> -->
+    
+        <script src="./assets/js/script.js"></script>
 </body>
 </html>
